@@ -46,7 +46,9 @@
 
 /* Base */
 
-* {
+*, 
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -223,7 +225,7 @@ ul {
 }
 
 .tradition-text:last-child {
-    max-width: 330px;
+    max-width: 380px;
 }
 
 
@@ -251,6 +253,30 @@ ul {
 .chefs-title {
     max-width: 520px;
     margin: 0 auto 80px;
+}
+
+.chefs-list {
+    display: flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+}
+
+.chefs-item {
+    display: flex;
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chefs-card {
+    display: flex;
+    gap: 30px;
+}
+
+.chef-text p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+    margin-bottom: 0;
 }
 
 /* Formats section */
@@ -302,6 +328,7 @@ ul {
     background-color: transparent;
     border: 1px solid var(--color-primary-dark);
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .carousel-button:hover {
@@ -309,22 +336,65 @@ ul {
     fill: var(--color-primary-light);
 }
 
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
 /* Contact section */
+
+.contact-section {
+    padding-bottom: 96px;
+    padding-top: 96px;
+}
 
 .contact-title {
     margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 64px;
+    max-width: 600px;
+}
 
+.contact-map {
+    flex-shrink: 0;
+    border-radius: 16px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
 }
 
 /* Footer */
 
 .footer {
-    background-image: url(./img/footer-backgraund.png);
-    background-color: var(--color-primary-dark);
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 32px 0;
+}
 
-.adress-icon {
+.footer-container {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav, 
+.footer-address{
+    display: flex;
+    flex-basis: 50%;
+    gap: 30px;
+}
+
+.footer-logo,
+.footer-menu {
+    flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+    flex-grow: 1;
+}
+
+.address-icon {
     fill: var(--color-primary-light);
 }
 
@@ -342,4 +412,11 @@ ul {
 .address-copyright {
     color: var(--color-brand-brown);
     font-size: 14px;
+}
+
+.footer {
+    background-image: url(./img/footer-backgraund.png);
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
