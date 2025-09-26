@@ -231,12 +231,27 @@ ul {
 
 /* Chefs section */
 
+.chefs-title {
+    margin: 0 auto 80px;
+    position: relative;
+}
+
 .chefs-title::after, 
 .chefs-title::before {
+    bottom: 24px;
+    position: absolute;
     display: block;
     width: 352px;
     border: 2px solid var(--color-brand-beige);
     content: '';
+}
+
+.chefs-title::before {
+    left: 0;
+}
+
+.chefs-title::after {
+    right: 0;
 }
 
 .chef-photo {
@@ -248,11 +263,7 @@ ul {
     margin-bottom: 16px;
     font-size: 40px;
     font-weight: 600;
-}
-
-.chefs-title {
-    max-width: 520px;
-    margin: 0 auto 80px;
+    position: relative;
 }
 
 .chefs-list {
@@ -328,7 +339,7 @@ ul {
     background-color: transparent;
     border: 1px solid var(--color-primary-dark);
     cursor: pointer;
-    flex-shrink: 0;
+    flex-shrink: 0;`````
 }
 
 .carousel-button:hover {
@@ -370,6 +381,11 @@ ul {
 
 .footer {
     padding: 32px 0;
+    position: relative;
+    background-image: url(./img/footer-backgraund.png);
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer-container {
@@ -414,9 +430,59 @@ ul {
     font-size: 14px;
 }
 
-.footer {
-    background-image: url(./img/footer-backgraund.png);
-    background-color: var(--color-primary-dark);
+.footer::before,
+.footer::after {
+    position: absolute;
+    bottom: 0;
     background-repeat: no-repeat;
-    background-size: cover;
+        content: '';
 }
+
+.footer::before {
+    left: 0;
+    width: 180px;
+    height: 120px;
+    background-image: url(./img/bread-l.png);
+}
+
+.footer::after {
+    right: 0;
+    width: 380px;
+    height: 190px;
+    background-image: url(./img/bread-r.png);
+}
+
+/* Modal window */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    width: 580px;  /* here is 880 must be */
+    height: 580px;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
