@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  padding-top: 32px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}

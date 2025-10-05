@@ -1,0 +1,30 @@
+@import "utils/fonts";
+@import "utils/colors";
+@import "utils/utils";
+@import "utils/base";
+
+@import "components/advantages";
+@import "components/button";
+@import "components/carousel";
+@import "components/chefs";
+@import "components/contacts";
+@import "components/footer";
+@import "components/form";
+@import "components/formats";
+
+@import "components/headder";
+@import "components/hero-section";
+@import "components/links";
+@import "components/modal";
+@import "components/traditions";
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 48px 0;
+}
