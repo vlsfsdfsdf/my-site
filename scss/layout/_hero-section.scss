@@ -11,15 +11,11 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-}
 
-.hero-title {
+&__title {
   color: var(--color-primary-light);
   text-align: center;
   font-weight: 900;
   font-size: 128px;
 }
-
-.hero-title .accent {
-  color: var(--color-primary-light1);
 }

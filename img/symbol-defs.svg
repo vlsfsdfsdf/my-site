@@ -18,9 +18,8 @@
     <path d="M16.001 13.155c1.571 0 2.845 1.273 2.845 2.844s-1.274 2.845-2.845 2.845c-1.571 0-2.845-1.274-2.845-2.845s1.273-2.844 2.845-2.844z"></path>
 </symbol>
 
-<symbol id="close-icon" viewBox="0 0 32 32">
-    <path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="miter" d="M8 8l8 8 8-8"></path>
-    <path stroke-width="2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="miter" d="M8 24l8-8 8 8"></path>
+<symbol id="close-buttone-image" viewBox="0 0 28 28">
+<path d="M7.057 7.057c0.521-0.521 1.365-0.521 1.886 0l7.057 7.057 7.057-7.057c0.521-0.521 1.365-0.521 1.886 0s0.521 1.365 0 1.886l-7.057 7.057 7.057 7.057c0.521 0.521 0.521 1.365 0 1.886s-1.365 0.521-1.886 0l-7.057-7.057-7.057 7.057c-0.521 0.521-1.365 0.521-1.886 0s-0.521-1.365 0-1.886l7.057-7.057-7.057-7.057c-0.521-0.521-0.521-1.365 0-1.886z"></path>
 </symbol>
 
 </defs>
