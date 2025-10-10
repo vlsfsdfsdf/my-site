@@ -1,4 +1,3 @@
-
 .footer {
   padding: 32px 0;
   position: relative;
@@ -33,15 +32,6 @@
 
 .address-list {
   max-height: 176px;
-}
-
-.address-icon {
-  fill: var(--color-primary-light);
-  transition: transform 0.3s;
-}
-
-.address-icon:hover {
-  transform: scale(1.05);
 }
 
 .address-link {
@@ -88,5 +78,21 @@
 }
 
 .footer-logo-button:hover {
+  transform: scale(1.05);
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+  transition: transform 0.3s;
+  margin-top: 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.address-icon:hover {
   transform: scale(1.05);
 }

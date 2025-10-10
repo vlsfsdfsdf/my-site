@@ -22,9 +22,21 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button modal__btn-open" type="button">
+          <button class="header__button button modal__btn-open" type="button">
             Замовити дзвінок
           </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24px" height="24px">
+              <use href="./img/symbol-defs.svg#menu-burger"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+               <svg width="28px" height="28px">
+                <use href="./img/symbol-defs.svg#close-buttone-image"></use>
+               </svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -34,16 +46,21 @@
           <h1 class="hero-section__title">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button class="hero-section__button button modal__btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages-section">
         <div class="container">
-          <h2 class="visually-hidden">Наші переваги</h2>
+         <div class="advantages-section__container">
+           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-section__list">
-            <li class="advantages-item">Великий попит на ринку</li>
-            <li class="advantages-item">Доступні за бюджетом формати</li>
-            <li class="advantages-item">Досвідчена управліньська команда</li>
+            <li class="advantages-section__item">Великий попит на ринку</li>
+            <li class="advantages-section__item">Доступні за бюджетом формати</li>
+            <li class="advantages-section__item">Досвідчена управліньська команда</li>
           </ul>
+         </div>
         </div>
       </section>
       <section class="traditions-section section" id="traditions-section">
@@ -72,11 +89,11 @@
                 та висока якість обслуговування!
               </p>
             </div>
-            <img src="./img/Mask group.svg" alt="photo pekar" />
+            <img class="traditions-section__image" src="./img/Mask group.svg" alt="photo pekar" />
           </div>
         </div>
       </section>
-      <section class="chefs-section section" id="chefs-section">
+      <!-- <section class="chefs-section section" id="chefs-section">
         <div class="container">
           <h2
             class="chefs-section__title section__title section__title--centered"
@@ -278,9 +295,9 @@
             </iframe>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <nav class="footer-nav">
@@ -320,25 +337,24 @@
                   href="https://share.google/bpfONXVthCvBMulcx"
                   target="_blank"
                 >
-                  Україна, м. Київ, вул. Січових Стрільців 54</a
+                  Україна, м. Київ,<br> вул. Січових Стрільців 54</a
                 >
               </li>
               <li>
-                <a href="#">
-                  <svg class="address-icon" width="32" height="32">
-                    <use href="./img/symbol-defs.svg#facebook"></use>
-                  </svg>
-                  <!-- facebook logo-->
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address-icon" width="32" height="32">
-                    <use href="./img/symbol-defs.svg#instagramm"></use>
-                  </svg>
-                  <!-- instagram logo-->
-                </a>
-              </li>
+            <div class="social-icons">
+              <a href="#">
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./img/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./img/symbol-defs.svg#instagramm"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+
             </ul>
             <div class="footer-info">
               <a class="address-link" href="#" target="_blank"
@@ -411,6 +427,7 @@
       </div>
     </div>
 
-    <script src="./modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

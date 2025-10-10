@@ -1,28 +1,57 @@
 .header {
   position: absolute;
-  padding-top: 32px;
   top: 0;
   left: 0;
   width: 100%;
+  padding-top: 16px;
 
-&__container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
+  @media screen and (min-width: $bp-desktop) {
+     padding-top: 32px;
+    }
 
-&__nav {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  gap: 40px;
-}
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
 
-&__menu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
-}
-}
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 40px;
+  }
 
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-light);
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    cursor: pointer;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+}

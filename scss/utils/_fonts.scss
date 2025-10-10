@@ -3,7 +3,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/poppins-v23-latin-300.woff2") format("woff2");
+  src: url("/Fonts/poppins-v23-latin/poppins-v23-latin-300.woff2")
+    format("woff2");
 }
 
 @font-face {
@@ -11,7 +12,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/poppins-v23-latin-regular.woff2") format("woff2");
+  src: url("/Fonts/poppins-v23-latin/poppins-v23-latin-regular.woff2")
+    format("woff2");
 }
 
 @font-face {
@@ -19,7 +21,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/poppins-v23-latin-600.woff2") format("woff2");
+  src: url("/Fonts/poppins-v23-latin/poppins-v23-latin-600.woff2")
+    format("woff2");
 }
 
 @font-face {
@@ -27,5 +30,6 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/poppins-v23-latin-900.woff2") format("woff2");
+  src: url("/Fonts/poppins-v23-latin/poppins-v23-latin-900.woff2")
+    format("woff2");
 }
