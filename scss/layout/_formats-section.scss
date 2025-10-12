@@ -3,20 +3,21 @@
     text-align: center;
   }
 
-  &__container {
+  &__slider {
     display: flex;
     gap: 32px;
     align-items: center;
   }
 
-  &__list {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    flex-grow: 1;
+  &__container {
+    overflow: hidden;
   }
 
-  &__item {
-    flex-basis: calc((100% - 40px) / 3);
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
   }
 }

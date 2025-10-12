@@ -28,6 +28,13 @@ h6 p {
   margin-top: 0;
 }
 
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 address {
   font-style: normal;
 }

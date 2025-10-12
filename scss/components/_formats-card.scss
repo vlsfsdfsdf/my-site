@@ -9,14 +9,9 @@
     var(--color-primary-dark)
   );
   border-radius: 16px;
-  transition: transform 0.3s;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 
   &__image {
     position: absolute;
@@ -25,6 +20,8 @@
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
   }
 
   &__title {
